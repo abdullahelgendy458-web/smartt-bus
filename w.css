@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* الوان الصفحه بعملها من :root */
+:root{
+    --bg-color: #f1f1f1;
+    --bg-seconry: #fbfbfb;
+    --light-gray:#333;
+    --light-brown:#c7a17a;
+    --black:#1f2226;
+}
+body{
+    font-family: "Oswald", sans-serif;
+    
+}
+h1, h2, h3{
+    font-family: "aswald", serif;
+color: #333;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* utility classes ال حاجات ال هتتكر معايا*/ 
+.container{
+    max-width: 1200px;
+    margin: auto;
+flex-grow: 1;
+}
+.text{
+    color: #c7a17a;
+}
+.head{  
+    text-align: center;
+}
+.head span {
+    font-size: 18px;
+}
+.head h2{
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#menu{
+    background-color: #0a1930;
+    padding: 6rem 0;
+}
+#menu .row{
+    display: grid;
+     grid-template-columns: repeat(2,1fr);
+    margin-top:2rem ;
+    gap: 5rem;
+    align-items: center;
+    flex-grow: 1;
+}
+#menu .row .col .item{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem;
+    border: 1px solid #ddd;
+    padding: 20px 20px;
+flex-grow: 1;
+}
+#menu .row .col .item img{
+    width: 80px;
+    margin-left: -50px;
+}
+#menu .row .col .item .details{
+    margin-left: 10px;
+}
+#menu .row .col .item .details h3 {
+    font-size: 20px;
+    margin: 15px;
+}
+#menu .row .col .item .details p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #a89e9e;
+}
+#menu .row .col .item .price{
+
+    padding: 20px;
+    margin: auto;
+}
+#menu .row .col .item .price{
+    font-size: 20px;
+    font-weight: 600;
+}
+#menu .row .col .item .price:hover{
+    background-color:bisque;
+     border-radius: 50%;
+}
+.circuit{
+      display: inline-block;
+    padding: 10px 30px;
+    background: rgb(91, 170, 163);
+    border: 2px solid rgb(91, 170, 163) ;
+    box-shadow: 0 0 10px rgb(91, 170, 163) ;
+    color: rgb(34, 33, 33);
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: .5s;
+    padding: 10px;
+    flex-grow: 1;
+}
+.circuit:hover{
+ background: transparent;
+    color: azure;
+    box-shadow: #1f242d;
+
+}
+.head h2  {
+ padding-top: 15px;
+}
+  @media(max-width:768px){
+    .container{
+        width: 95%;
+    }
+#menu .row{
+    grid-template-columns: 1fr;
+}
+
+  }
+
+/* rgb(115, 138, 97)  rgb(221, 217, 217) */

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* الوان الصفحه بعملها من :root */
+:root{
+    --bg-color: #f1f1f1;
+    --bg-seconry: #fbfbfb;
+    --light-gray:#333;
+    --light-brown:#c7a17a;
+    --black:#1f2226;
+}
+*{
+background: rgb(2, 2, 65);
+}
+body{
+    font-family: "Oswald", sans-serif;
+    background-color: rgb(2, 2, 65) ;
+}
+h1, h2, h3{
+    font-family: "aswald", serif;
+color: #333;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* utility classes ال حاجات ال هتتكر معايا*/ 
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.text{
+    color: #c7a17a;
+    
+}
+.circuit{
+     color: #c7a17a;
+      font-size:70px;
+    font-weight: 600;
+}
+.head{  
+    text-align: center;
+}
+.head span {
+    font-size: 18px;
+}
+.head h2{
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#about{
+    padding:6rem 0;
+}
+#about .row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    align-items: center;
+}
+#about .row .about-content h2 {
+text-transform: uppercase;
+font-size: 20px;
+margin-bottom: 10px;
+}
+#about .row .about-content p {
+    color: rgb(102, 105, 105);
+}
+#about .row .about-content ul {
+    color: rgb(102, 105, 105);
+}
+#about .row .about-content .item{
+    margin: 2rem 0;
+}
+#about .row .about-content .item h3{
+    margin-bottom: 5px;
+}
+#menu{
+    background-color:rgb(2, 2, 65);
+    padding: 6rem 0;
+}
+#menu .row{
+    display: grid;
+     grid-template-columns: repeat(2,1fr);
+    margin-top:2rem ;
+    gap: 5rem;
+    align-items: center;
+}
+#menu .row .col .item{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem;
+    border: 1px solid #ddd;
+    padding: 20px 20px;
+
+}
+#menu .row .col .item img{
+    width: 80px;
+    margin-left: -50px;
+    border-radius: 20px;
+}
+#menu .row .col .item .details{
+    margin-left: 10px;
+}
+#menu .row .col .item .details h3 {
+    font-size: 20px;
+    margin: 15px;
+}
+#menu .row .col .item .details p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #c7a17a;
+}
+#menu .row .col .item .price{
+    border-left: 1px solid #eee;
+    padding: 20px;
+    margin: auto;
+}
+#menu .row .col .item .price{
+    font-size: 20px;
+    font-weight: 600;
+}
+#menu .row .col .item .price:hover{
+    background-color:bisque;
+     border-radius: 50%;
+}
+img{
+    background-color:rgb(2, 2, 65) ;
+}
